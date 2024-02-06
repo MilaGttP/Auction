@@ -2,6 +2,7 @@
 {
     public class Auction
     {
+        public int Id { get; set; }
         public String Name { get; set; }
         public String Description { get; set; }
         public int StartPrice { get; set; }
