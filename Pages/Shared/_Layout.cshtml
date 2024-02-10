@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <a asp-page="/Index" class="head-def">Усі аукціони</a>
+        <a asp-page="/Login" class="head-def">Вхід</a>
+        <a asp-page="/Registration" class="head-reg">Зареєструватися</a>
+    </header>
+
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>
