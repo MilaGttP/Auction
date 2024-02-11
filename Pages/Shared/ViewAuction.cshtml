@@ -1,0 +1,33 @@
+﻿@page "/ViewAuction/ViewAuction/{id:int}"
+@model Pages.ViewAuctionModel
+@inject Services.IAuctionService AuctionService
+
+@{
+    int id = Convert.ToInt32(RouteData.Values["id"]);
+    Models.Auction auction = AuctionService.GetAuctionById(id);
+    var userId = auction.UserId;
+    Models.User user = AuctionService.GetUserById(userId);
+}
+
+<div class="view-auc-wr">
+    <h2 class="my-auc view-auc-h2">@auction.Name</h2>
+    <div class="view-auc-main">
+        <div>
+            <p class="view-auc-p">
+                @auction.Description
+            </p>
+            <div class="view-auc-main-cont">
+                <h3 class="view-auc-h3">СТАРТОВА ЦІНА</h3>
+                <span class="view-auc-span">@auction.StartPrice</span>
+            </div>
+            <div class="view-auc-main-cont">
+                <h3 class="view-auc-h3">СТВОРИВ</h3>
+                <span class="view-auc-span">@user.Name</span>
+            </div>
+        </div>
+    </div>
+    <div class="view-auc-btns">
+        <a class="v-auc-btn" asp-controller="ViewAuctionBets" asp-action="ViewAuctionBets" asp-route-id="@auction.Id">ІСТОРІЯ СТАВОК</a>
+        <a class="v-auc-btn" asp-controller="Bet" asp-action="MakeBet" asp-route-id="@auction.Id" >ПОСТАВИТИ СТАВКУ</a>
+    </div>
+</div>

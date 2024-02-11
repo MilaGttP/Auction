@@ -1,0 +1,32 @@
+﻿@model Auction.Models.User
+@inject Services.IAuctionService AuctionService
+
+<div class="profile-wrapper">
+    <div class="myinfo">
+        <h3 class="profile-h">ПРОФІЛЬ КОРИСТУВАЧА</h3>
+        <h4 class="pr-inf">@Model.Name</h4>
+        <h4 class="pr-inf">@Model.Email</h4>
+    </div>
+
+    <div class="profile-oppor">
+        <h3 class="my-auc">МОЇ АУКЦІОНИ</h3>
+        <div class="pr-cont-wr">
+            <a asp-page="/Shared/CreateAuction" class="create-btn">+</a>
+
+            @foreach (var auction in AuctionService.GetAllAuctionsByOneUser())
+            {
+                <div class="main-sc-auc-item">
+                    <p class="main-sc-auc-item-h">@auction.Name</p>
+                    <div class="main-sc-auc-item-wr">
+                        <p class="main-sc-auc-item-pr-p">Початкова ціна: </p>
+                        <span class="main-sc-auc-item-pr-sp">@auction.StartPrice</span>
+                    </div>
+                    <div class="pr-edit-btn-wr">
+                        <a asp-controller="EditAuction" asp-action="EditAuction" asp-route-id="@auction.Id" class="pr-edit-btn">Редагувати</a>
+                    </div>
+                </div>
+            }
+           
+        </div>
+    </div>
+</div>

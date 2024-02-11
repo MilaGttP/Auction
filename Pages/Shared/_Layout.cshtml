@@ -4,13 +4,26 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/media.css" asp-append-version="true" />
+
 </head>
 <body>
     <header>
-        <a asp-page="/Index" class="head-def">Усі аукціони</a>
-        <a asp-page="/Login" class="head-def">Вхід</a>
-        <a asp-page="/Registration" class="head-reg">Зареєструватися</a>
+        <div class="h-one">
+            <a asp-page="/Shared/Index">
+                <div>
+                    <img src="~/assets/logo_head.svg" class="logo-img" alt="logo" />
+                </div>
+            </a>
+        </div>
+        <div class="h-two">
+            <a asp-page="/Shared/Index" class="head-def">Усі аукціони</a>
+            <a asp-page="/Shared/Login" class="head-def">Вхід</a>
+            <a asp-page="/Shared/Register" class="head-reg">Зареєструватися</a>
+        </div>
     </header>
 
     <div class="container">

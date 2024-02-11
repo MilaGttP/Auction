@@ -1,0 +1,24 @@
+﻿@page
+@inject Services.IAuctionService AuctionService
+
+<div class="main-sc-content">
+    <h1>АУКЦІОНИ</h1>
+    <div class="main-sc-auc-wrapper">
+        @foreach (var auction in AuctionService.GetAllAuctions())
+        {
+            <a asp-controller="ViewAuction" asp-action="ViewAuction" asp-route-id="@auction.Id" class="a-items">
+                <div class="main-sc-auc-item">
+                    <p class="main-sc-auc-item-h">@auction.Name</p>
+                    <div class="main-sc-auc-item-wr">
+                        <p class="main-sc-auc-item-pr-p">Початкова ціна: </p>
+                        <span class="main-sc-auc-item-pr-sp">@auction.StartPrice</span>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+    @if (!string.IsNullOrEmpty(TempData["Error"] as string))
+    {
+        <script>alert("@TempData["Error"]");</script>
+    }
+</div>

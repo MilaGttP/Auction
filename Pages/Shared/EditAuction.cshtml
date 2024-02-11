@@ -1,0 +1,32 @@
+﻿@page "/EditAuction/EditAuction/{id:int}"
+@model Auction.Pages.Shared.EditAuctionModel
+@inject Services.IAuctionService AuctionService
+
+@{
+    var id = Convert.ToInt32(RouteData.Values["id"]);
+    var auction = AuctionService.GetAuctionById(id);
+}
+
+<form asp-controller="EditAuction" asp-action="EditAuction" asp-route-id="@auction.Id" method="post">
+    <div class="view-auc-wr">
+        <h2 class="my-auc view-auc-h2">
+            <input class="edit-item" type="text" value="@auction.Name" name="Name" />
+        </h2>
+        <div class="view-auc-main">
+            <div>
+                <p class="view-auc-p">
+                    <textarea class="edit-item" name="Description">@auction.Description</textarea>
+                </p>
+                <div class="view-auc-main-cont">
+                    <h3 class="view-auc-h3">СТАРТОВА ЦІНА</h3>
+                    <span class="view-auc-span">
+                        <input class="edit-item" type="number" value="@auction.StartPrice" name="StartPrice" />
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="view-auc-btns">
+            <button type="submit" class="v-auc-btn">ЗБЕРЕГТИ</button>
+        </div>
+    </div>
+</form>

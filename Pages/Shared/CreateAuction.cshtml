@@ -1,0 +1,17 @@
+﻿@page
+@model Auction.Models.Auction
+
+<div class="create-auc-wrapper">
+    <h3>СТВОРИТИ АУКЦІОН</h3>
+    <div class="create-auc-wrapper-content">
+        <form asp-controller="CreateAuction" asp-action="CreateAuction" method="post">
+            <h3 class="create-auc-h3">Назва</h3>
+            <input asp-for="Name" class="form1-cr-auc" type="text">
+            <h3 class="create-auc-h3">Опис</h3>
+            <input asp-for="Description" class="form2-cr-auc" type="text">
+            <h3 class="create-auc-h3">Стартова ціна</h3>
+            <input asp-for="StartPrice" class="form3-cr-auc" type="number">
+            <button class="create-auc-btn" type="submit">Зберегти</button>
+        </form>
+    </div>
+</div>

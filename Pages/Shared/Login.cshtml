@@ -1,0 +1,19 @@
+﻿@page
+@model Auction.Models.User
+
+<div class="reg-wrapper">
+    <h3 class="reg-h">ВХІД</h3>
+    <form method="post" action="/Login/Login">
+        <h3 class="log-txt">Логін</h3>
+        <input class="form-reg" type="text" placeholder="Введіть логін" name="Email">
+        <h3 class="log-txt">Пароль</h3>
+        <input class="form-reg" type="password" placeholder="Введіть пароль" name="Password">
+        <div>
+            <button class="register-btn" type="submit">Вхід</button>
+        </div>
+    </form>
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <script>alert("@ViewBag.Error");</script>
+    }
+</div>

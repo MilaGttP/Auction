@@ -1,0 +1,23 @@
+﻿@page
+@model Auction.Models.User
+
+<div class="reg-wrapper">
+    <h2 class="reg-h">РЕЄСТРАЦІЯ</h2>
+    <div class="reg-div">
+        <form method="post" action="/Registration/Register">
+            <h3>Прізвище, Ім'я, По батькові</h3>
+            <input class="form-reg" type="text" placeholder="Введіть своє ПІБ" name="Name">
+            <h3>Телефон</h3>
+            <input class="form-reg" type="text" placeholder="Введіть свій номер" name="PhoneNumber">
+            <h3>E-mail</h3>
+            <input class="form-reg" type="text" placeholder="Введіть E-mail" name="Email">
+            <h3>Пароль</h3>
+            <input class="form-reg" type="password" placeholder="Створіть пароль" name="Password">
+            <h3>Підтвердження паролю</h3>
+            <input class="form-reg" type="password" placeholder="Підтвердіть пароль" name="ConfirmPassword">
+            <div>
+                <button class="register-btn" type="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </div>
+</div>

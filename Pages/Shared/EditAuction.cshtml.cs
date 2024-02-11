@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Auction.Pages
+namespace Auction.Pages.Shared
 {
-    public class RegistrationModel : PageModel
+    public class EditAuctionModel : PageModel
     {
         public void OnGet()
         {

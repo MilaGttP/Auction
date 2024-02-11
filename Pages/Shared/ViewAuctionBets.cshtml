@@ -1,0 +1,17 @@
+﻿@model List<Auction.Models.Bet>
+
+<div class="view-b-wr">
+    <h2 class="my-auc view-b-h2">ІСТОРІЯ СТАВОК</h2>
+    <div class="view-b-main-cont">
+        <div class="view-b-cont">
+            @foreach (var bet in Model)
+            {
+                <div class="view-b-cont-item">
+                    <p class="view-b-name">@bet.CreationUser.Name</p>
+                    <p class="view-b-name">СТАВКА -></p>
+                    <span class="view-b-bet">@bet.Amount</span>
+                </div>
+            }
+        </div>
+    </div>
+</div>

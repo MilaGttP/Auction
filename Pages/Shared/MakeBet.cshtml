@@ -1,0 +1,36 @@
+﻿@page "/Bet/MakeBet/{id:int}"
+@inject Services.IAuctionService AuctionService
+
+@{
+    int id = ViewBag.AuctionId;
+    Models.Bet bet = AuctionService.GetLatestBet(id);
+    string betAmountText;
+
+    if (bet == null)
+    {
+        betAmountText = "Ще не було ставок";
+    }
+    else
+    {
+        betAmountText = bet.Amount.ToString();
+    }
+}
+
+<form asp-controller="Bet" asp-action="MakeBet" method="post">
+<div class="reg-wrapper">
+    <h3 class="reg-h">ПОСТАВИТИ СТАВКУ</h3>
+
+        <h3 class="log-txt">Остання ставка</h3>
+        <h3 class="log-txt last-bet">@betAmountText</h3>
+        <h3 class="log-txt">Ваша ставка</h3>
+        <input class="form-reg" type="number" placeholder="Введіть ставку" name="Amount">
+        <div>
+            <button class="register-btn" type="submit">Зберегти</button>
+        </div>
+
+    @if (!string.IsNullOrEmpty(ViewBag.Error))
+    {
+        <script>alert("@ViewBag.Error");</script>
+    }
+</div>
+</form>
