@@ -1,0 +1,284 @@
+@media screen and (max-width: 720px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .view-b-cont-item {
+        display: block;
+    }
+
+    .form1-cr-auc {
+        width: 270px;
+    }
+
+    .form2-cr-auc {
+        width: 270px;
+    }
+
+    .form3-cr-auc {
+        width: 270px;
+    }
+
+    .create-btn {
+        height: 20vh;
+    }
+
+    .myinfo {
+        height: 30vh;
+    }
+
+    .head-reg {
+        font-family: "Mariupol";
+        font-size: 15px;
+        color: #000000;
+        background-color: #D4B9FF;
+        border-radius: 30px;
+        padding: 10px 10px;
+        margin: 5px 0px;
+        text-decoration: none;
+        transition: ease-in-out 0.5s;
+    }
+
+        .head-def {
+            font-family: "Mariupol";
+            font-size: 15px;
+            color: #FFF;
+            margin-right: 5px;
+            text-decoration: none;
+            transition: ease-in-out 0.2s;
+        }
+
+        .logo-img {
+            width: 110px;
+        }
+
+
+
+
+
+
+        .reg-h {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-family: "Kharkiv Tone";
+        }
+
+        .form-reg {
+            margin-bottom: 15px;
+            padding: 10px 10px;
+            width: 270px;
+            background-color: #FFECEE;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .register-btn {
+            font-family: "Mariupol";
+            font-size: 18px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #CDAEFF;
+            border: none;
+            border-radius: 20px;
+            transition: ease-in-out 0.5s;
+        }
+
+        .log-txt {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-family: "Mariupol";
+        }
+
+
+
+
+        .profile-wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+
+        .myinfo {
+            background-color: #EBE1FC;
+            border-radius: 20px;
+            padding: 20px;
+            height: 70vh;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .profile-h {
+            font-size: 20px;
+            font-family: "Kharkiv Tone";
+            margin-bottom: 50px;
+        }
+
+        .pr-inf {
+            font-size: 16px;
+            font-family: "Mariupol";
+            margin-bottom: 20px;
+            background-color: #FFCED4;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .profile-oppor {
+            margin-top: 10px;
+        }
+
+        .my-auc {
+            font-size: 25px;
+            font-family: "Kharkiv Tone";
+            margin-bottom: 25px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+
+        .create-btn {
+            background-color: #FFCED4;
+            border: none;
+            padding: 50px 50px;
+            border-radius: 30px;
+            font-size: 25px;
+            transition: ease-in-out 0.5s;
+        }
+
+        .pr-cont-wr {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+
+    .main-sc-auc-item {
+        background-color: #F1EDFF;
+        border-radius: 40px;
+        padding: 20px 30px;
+        border: solid #404040 0.9px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        height: 25vh;
+    }
+
+    .main-sc-auc-item-pr-p {
+        margin-right: 40px;
+        font-size: 20px;
+        font-family: "Mariupol";
+    }
+
+    .main-sc-auc-item-pr-sp {
+        font-size: 15px;
+        background-color: #E0CCFF;
+        border-radius: 10px;
+        padding: 5px 12px;
+        font-family: "Mariupol";
+    }
+
+    .main-sc-auc-item-h {
+        font-size: 22px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-family: "Mariupol";
+    }
+
+        .pr-edit-btn {
+            background-color: #FFCED4;
+            transition: ease-in-out 0.5s;
+            border: none;
+            font-size: 15px;
+            padding: 10px 30px;
+            font-size: "Mariupol";
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        .head-reg {
+            font-family: "Mariupol";
+            font-size: 15px;
+            color: #000000;
+            background-color: #D4B9FF;
+            border-radius: 30px;
+            padding: 10px 10px;
+            margin: 5px 0px;
+            text-decoration: none;
+            transition: ease-in-out 0.5s;
+        }
+
+        .head-def {
+            font-family: "Mariupol";
+            font-size: 15px;
+            color: #FFF;
+            margin-right: 5px;
+            text-decoration: none;
+            transition: ease-in-out 0.2s;
+        }
+
+        .logo-img {
+            width: 110px;
+        }
+
+        .view-b-bet {
+            font-size: 18px;
+            font-family: "Mariupol";
+            background-color: #FFD7DB;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .view-b-name {
+            font-size: 14px;
+            font-family: "Kharkiv Tone";
+        }
+
+        .my-auc-view-b-h2 {
+            font-size: 25px;
+            font-family: "Kharkiv Tone";
+            margin-bottom: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .view-auc-span {
+            font-size: 18px;
+            font-family: "Mariupol";
+            background-color: #E7D8FF;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .view-auc-h3 {
+            font-family: "Kharkiv Tone";
+            font-size: 18px;
+        }
+
+        .v-auc-btn {
+            text-decoration: none;
+            font-family: "Kharkiv Tone";
+            color: #000000;
+            background-color: #FFCED4;
+            padding: 20px 30px;
+            font-size: 12px;
+            border-radius: 16px;
+            transition: ease-in-out 0.5s;
+        }
+
+        .view-auc-p {
+            width: 300px;
+            margin-bottom: 30px;
+            font-family: "Mariupol";
+            font-size: 15px;
+            background-color: #E7D8FF;
+            padding: 20px 30px;
+            border-radius: 20px;
+        }
+
+        .my-auc {
+            font-size: 25px;
+            font-family: "Kharkiv Tone";
+            margin-bottom: 40px;
+            margin-top: 30px;
+            text-align: center;
+        }
+   }
